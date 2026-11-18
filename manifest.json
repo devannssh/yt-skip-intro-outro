@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Skip Intro & Outro for YouTube",
+  "version": "1.0.0",
+  "description": "One-click skip for intros, outros and recaps on YouTube. Uses community data, chapters, and audio learning for anime marathons.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://sponsor.ajay.app/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/*"],
+    "js": ["content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }],
+  "action": { "default_popup": "popup.html", "default_title": "Skip Intro & Outro" }
+}

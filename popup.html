@@ -1,0 +1,21 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  body { width: 300px; margin: 0; padding: 14px; font: 14px system-ui, sans-serif; color: #1a1a1a; }
+  h1 { font-size: 15px; margin: 0 0 10px; }
+  label { display: flex; align-items: center; gap: 8px; padding: 4px 0; }
+  h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: #666; margin: 14px 0 6px; }
+  .row { display: flex; justify-content: space-between; align-items: center; padding: 4px 0; font-size: 13px; }
+  .row button { border: 0; background: none; color: #c00; cursor: pointer; }
+  p { font-size: 12px; color: #666; margin: 6px 0 0; }
+  @media (prefers-color-scheme: dark) { body { background: #1e1e1e; color: #eee; } h2, p { color: #aaa; } }
+</style>
+<h1>Skip Intro &amp; Outro</h1>
+<label><input type="checkbox" id="auto"> Auto-skip (no click needed)</label>
+<label><input type="checkbox" id="sb"> Community data (SponsorBlock)</label>
+<label><input type="checkbox" id="chapters"> Chapter titles (Intro, OP, ED, Credits…)</label>
+<label><input type="checkbox" id="learn"> Learn from my marks (audio)</label>
+<h2>Learned intros / outros</h2>
+<div id="list"></div>
+<p>Hover over a video and use “Mark intro” / “Mark outro” to teach the extension.</p>
+<script src="popup.js"></script>

@@ -1,0 +1,14 @@
+.sio-skip { position: absolute; right: 24px; bottom: 90px; z-index: 70; border: 0; border-radius: 4px;
+  padding: 10px 18px; background: rgba(255,255,255,.93); color: #111; font: 600 15px Roboto, Arial, sans-serif;
+  cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,.45); transition: bottom .25s; }
+.sio-skip:hover { background: #fff; }
+.sio-skip[hidden] { display: none; }
+#movie_player.ytp-autohide .sio-skip { bottom: 30px; }
+.sio-tools { position: absolute; top: 12px; left: 12px; z-index: 70; display: flex; gap: 6px; opacity: 0; transition: opacity .2s; }
+#movie_player:not(.ytp-autohide) .sio-tools, .sio-tools.on { opacity: 1; }
+.sio-tools button { border: 0; border-radius: 4px; padding: 5px 10px; background: rgba(0,0,0,.65); color: #fff;
+  font: 500 12px Roboto, Arial, sans-serif; cursor: pointer; }
+.sio-tools button:hover { background: rgba(0,0,0,.9); }
+.sio-toast { position: absolute; top: 52px; left: 12px; z-index: 70; max-width: 320px; padding: 8px 12px; border-radius: 4px;
+  background: rgba(0,0,0,.8); color: #fff; font: 13px Roboto, Arial, sans-serif; display: none; }
+.sio-toast.show { display: block; }
